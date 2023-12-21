@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2e80ce;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-size: 1.6rem;
+    font-family: "Sora",sans-serif;
+}
+/* common */
+a {
+    text-decoration: none;
+}
+/* =====Cách để cho có nhiều chữ thì sẽ tự động chuyển thành "....." tù số hàng mong muốn */
+/* =====Có thể chọn css theo kiểu inline ở html hoặc external như bình thường  */
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
